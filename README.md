@@ -74,16 +74,6 @@
 
 > **💡 洞察:** 在巴塞尔等大陆性气候城市中，XGBoost 的权重被系统自适应调高 (约 59.6% - 64.4%)，这表明在这些地区，**并发气象特征的复杂交互作用**比单纯的时间序列模式更占主导地位。
 
-### 表现可视化 (Visualization)
-*(请将下面的占位图片替换为您 `figures` 文件夹中的真实图片)*
-
-<p align="center">
-  <img src="https://via.placeholder.com/800x250/f4f4f4/333333?text=Prediction+Curves+-+Basel+(Replace+with+Figure+1)" alt="Basel Result"/>
-</p>
-<p align="center">
-  <em>图：巴塞尔(Basel) 测试集的预测曲线与误差分布图。自适应集成模型紧密跟踪季节变化和短期波动，且误差极度收敛于 0。</em>
-</p>
-
 ---
 
 ## 🚀 快速开始 (Getting Started)
