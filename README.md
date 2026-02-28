@@ -4,12 +4,6 @@
 
 **基于 XGBoost 与 LSTM 自适应集成的高精度气象温度预测模型**
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg?style=for-the-badge&logo=python)](https://www.python.org/)
-[![XGBoost](https://img.shields.io/badge/XGBoost-1.5.0%2B-orange.svg?style=for-the-badge&logo=xgboost)](https://xgboost.readthedocs.io/)
-[![PyTorch/TensorFlow](https://img.shields.io/badge/Deep_Learning-LSTM-red.svg?style=for-the-badge&logo=pytorch)](#)
-[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
-[![Paper](https://img.shields.io/badge/Paper-BIT-9cf.svg?style=for-the-badge)](#)
-
 *准确的天气预测，从日常规划到灾害救援的基石。*
 
 [English](#) • [简体中文](#) • [Dataset](https://github.com/florian-huber/weather_prediction_dataset) 
