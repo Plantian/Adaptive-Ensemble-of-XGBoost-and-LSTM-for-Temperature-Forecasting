@@ -4,7 +4,15 @@
 
 **基于 XGBoost 与 LSTM 自适应集成的高精度气象温度预测模型**
 
-[English](#) • [简体中文](#) • [Dataset](https://github.com/florian-huber/weather_prediction_dataset) 
+<a href='https://www.atlantis-press.com/proceedings/ichch-25/126025240'><img src='https://img.shields.io/badge/Adaptive Ensemble of XGBoost and LSTM for Temperature Forecasting-Atlantis Press-red?logo=arxiv'></a>
+
+**[Mingcheng Ye](https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=xMO3ISAAAAAJ)**<sup>1</sup>
+
+<sup>1</sup> *Beijing Institute of Technology*
+
+</div>
+
+[中文](#) • [Dataset](https://github.com/florian-huber/weather_prediction_dataset) 
 
 </div>
 
