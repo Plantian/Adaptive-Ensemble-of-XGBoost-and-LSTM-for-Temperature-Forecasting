@@ -36,7 +36,7 @@ cd Adaptive-Ensemble-Weather-Forecast
 ```
 ---
 
-## 📖 引用
+## 📖 引用 (Citation)
 
 ```bib
 @inproceedings{Ye2026,
