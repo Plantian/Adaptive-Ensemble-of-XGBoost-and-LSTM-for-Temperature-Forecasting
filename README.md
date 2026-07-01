@@ -4,8 +4,6 @@
 
 **基于 XGBoost 与 LSTM 自适应集成的高精度气象温度预测模型**
 
-*准确的天气预测，从日常规划到灾害救援的基石。*
-
 [English](#) • [简体中文](#) • [Dataset](https://github.com/florian-huber/weather_prediction_dataset) 
 
 </div>
@@ -14,7 +12,7 @@
 
 ## 📖 项目简介 (Overview)
 
-本项目复现/开源了论文 **《Adaptive Ensemble of XGBoost and LSTM for Temperature Forecasting》** 中的核心算法。我们提出了一种创新的**自适应集成学习方法**，巧妙地结合了：
+本项目开源了论文 **《Adaptive Ensemble of XGBoost and LSTM for Temperature Forecasting》** 中的核心算法。我们提出了一种创新的**自适应集成学习方法**，巧妙地结合了：
 - 🧠 **LSTM (长短期记忆网络):** 擅长捕捉长期的时间序列依赖与季节性模式。
 - 🌳 **XGBoost (极端梯度提升树):** 擅长处理复杂的特征交互与非线性关系。
 
@@ -29,56 +27,27 @@
 
 ---
 
-## 🏗️ 系统架构 (Architecture)
-
-整个自适应框架由三个核心部分组成：
-
-1. **LSTM 预测通道**: 经过 Dropout 正则化处理的多层 LSTM 架构，专为气象序列的长期记忆优化。
-2. **XGBoost 特征工程模块**: 提取包括滑动平均、极值、趋势指标在内的多维统计特征。
-3. **自适应权重学习模块**: 
-   最终的预测结果 $\hat{y}_{final}$ 由以下动态公式决定：
-   
-   $$ \hat{y}_{final} = w_{lstm} \times \hat{y}_{lstm} + w_{xgb} \times \hat{y}_{xgb} $$
-
-   *权重通过实时分析模型近期训练误差 ($\varepsilon$) 动态分配，确保系统始终向表现更优的模型倾斜。*
-
----
-
-## 📊 数据集 (Dataset)
-
-本实验采用来自 Kaggle 的综合气象数据集，包含**欧洲 5 个代表性城市**（杜塞尔多夫、巴塞尔、德比尔特、德累斯顿、布达佩斯）约 10 年（3650天）的连续观测数据。
-
-| 气象变量 (Variable) | 单位 (Unit) | 描述 |
-| :--- | :---: | :--- |
-| **Cloud Cover** (云量) | % | 天空被云层覆盖的百分比 |
-| **Humidity** (湿度) | 0-1 | 相对湿度比例 |
-| **Pressure** (气压) | 1000 hPa | 大气压强 |
-| **Global Radiation** (全球辐射) | 100 W/m² | 太阳辐射强度 |
-| **Precipitation** (降水量) | 10mm | 降水深度 |
-| **Sunshine Hours** (日照时长) | Hour | 每日日照时间 |
-| **Mean/Min/Max Temperature** | °C | 目标预测变量：平均/最低/最高气温 |
-
----
-
-## 🏆 实验结果 (Results)
-
-模型在五座城市的测试集上均取得了压倒性的优势。以下为详细评估指标（详见论文 Table 2）：
-
-| 城市 (City) | 气候类型 | RMSE 📉 | $R^2$ 🎯 | MSE |
-| :--- | :--- | :---: | :---: | :---: |
-| **Basel (巴塞尔)** | 大陆性气候 | **0.5191** | **0.9950** | 0.4141 |
-| **De Bilt (德比尔特)** | 海洋性气候 | 0.5361 | 0.9925 | 0.3968 |
-| **Düsseldorf (杜塞尔多夫)** | 大陆性气候 | 0.5475 | 0.9923 | 0.4274 |
-| **Dresden (德累斯顿)** | 大陆性气候 | 0.6304 | 0.9930 | 0.4392 |
-| **Budapest (布达佩斯)** | 过渡性气候 | 1.0187 | 0.9849 | 0.7834 |
-
-> **💡 洞察:** 在巴塞尔等大陆性气候城市中，XGBoost 的权重被系统自适应调高 (约 59.6% - 64.4%)，这表明在这些地区，**并发气象特征的复杂交互作用**比单纯的时间序列模式更占主导地位。
-
----
-
 ## 🚀 快速开始 (Getting Started)
 
 ### 1. 克隆仓库
 ```bash
 git clone https://github.com/YourUsername/Adaptive-Ensemble-Weather-Forecast.git
 cd Adaptive-Ensemble-Weather-Forecast          
+```
+---
+
+## 📖引用本篇文章如果你觉得很有帮助的话
+```bib
+@inproceedings{Ye2026,
+  title={Adaptive Ensemble of XGBoost and LSTM for Temperature Forecasting},
+  author={Mingcheng Ye},
+  year={2026},
+  booktitle={Proceedings of the 2025 International Conference on Hybrid Commerce, Human Capital, and Economic Dynamics (ICHCH 2025)},
+  pages={237-246},
+  issn={2352-5428},
+  isbn={978-2-38476-585-0},
+  url={https://doi.org/10.2991/978-2-38476-585-0_28},
+  doi={10.2991/978-2-38476-585-0_28},
+  publisher={Atlantis Press}
+}
+```
