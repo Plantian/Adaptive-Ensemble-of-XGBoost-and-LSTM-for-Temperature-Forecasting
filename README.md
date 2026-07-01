@@ -38,6 +38,7 @@ cd Adaptive-Ensemble-Weather-Forecast
 
 ## 📖 引用 (Citation)
 
+如果你觉得这个项目对您有帮助，引用：
 ```bib
 @inproceedings{Ye2026,
   title={Adaptive Ensemble of XGBoost and LSTM for Temperature Forecasting},
