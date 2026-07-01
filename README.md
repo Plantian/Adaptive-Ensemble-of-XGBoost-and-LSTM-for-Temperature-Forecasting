@@ -29,14 +29,15 @@
 
 ## 🚀 快速开始 (Getting Started)
 
-### 1. 克隆仓库
+### 克隆仓库
 ```bash
 git clone https://github.com/YourUsername/Adaptive-Ensemble-Weather-Forecast.git
 cd Adaptive-Ensemble-Weather-Forecast          
 ```
 ---
 
-## 📖引用本篇文章如果你觉得很有帮助的话
+## 📖 引用
+
 ```bib
 @inproceedings{Ye2026,
   title={Adaptive Ensemble of XGBoost and LSTM for Temperature Forecasting},
